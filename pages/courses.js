@@ -24,10 +24,10 @@ const Courses = (props) => {
            
                 <div className='col-md-3'>
                 <div className='mb-4 p-3 '>
-                <img src={item.image} alt=".." className={Styles.img_responsive} />
+                <Image src={item.image} alt=".." width={300} height={300} className={Styles.img_responsive} />
                 <h4 className='fs-6'>{item.title}</h4>               
-                <p className={Styles.elipsis}>{item.description}</p>
-                <h6>Rs. {item.price}</h6>
+                <p className={Styles.elipsis + ' text-muted'}>{item.description}</p>
+                <h6 className='text-danger'>Rs. {item.price}</h6>
                 </div>
                 </div>
             
